@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/group.css" />
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/group.js" defer></script>
+    <script>
+      const grpName = "<%= grpName %>";
+      const grpID = "<%= grpID %>";
+    </script>
+    <title><%= grpName %> Group 😉</title>
+  </head>
+  <body>
+    <h5>You are inside <%= grpName %> Group 😉❤️</h5>
+    <button id="leaveGrp">Leave Group 👋👋</button>
+    <div id="gridContainer">
+      <div id="chatApp">
+        <p id="connectionStatus"></p>
+        <p id="typing"></p>
+        <ul id="messages"></ul>
+      </div>
+      <div id="listOfUsers">
+        <h1>Connected Users</h1>
+        <ul id="connectedUsers"></ul>
+      </div>
+      <div>
+        <form id="grpMsgForm" action="">
+          <input id="grpMsgInput" autocomplete="off" />
+          <button>Send To All</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

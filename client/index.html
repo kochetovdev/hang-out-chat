@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Hang Out 😎</title>
+  </head>
+  <body>
+    <button id="createGrp">Create a Private Group</button>
+    <div id="gridContainer">
+      <div id="chatApp">
+        <p id="connectionStatus"></p>
+        <p id="typing"></p>
+        <ul id="messages"></ul>
+      </div>
+      <div id="listOfUsers">
+        <h1>Connected Users</h1>
+        <ul id="connectedUsers"></ul>
+      </div>
+      <form id="privateMsgs"></form>
+      <div>
+        <form id="grpMsgForm" action="">
+          <input id="grpMsgInput" autocomplete="off" />
+          <button>Send To All</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
